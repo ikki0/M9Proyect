@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Case</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./js/script.js"></script>
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+  </head>
+  <body>
+    <div
+      class="w-full h-auto overflow-scroll block h-screen bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 p-4 flex items-center justify-center"
+    >
+      <div class="bg-white py-6 px-10 sm:max-w-md w-full rounded-xl">
+        <form action="">
+          <div
+            class="sm:text-3xl text-2xl font-semibold text-center text-sky-600 mb-12"
+          >
+            Registrarse
+          </div>
+          <div>
+            <div>
+              <input
+                type="text"
+                required
+                class="input focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500 input"
+                placeholder="Nombre..."
+              />
+              <p class="errorNombreVacio inputError hidden">
+                Error: nombre vacío
+              </p>
+            </div>
+            <div>
+              <input
+                type="email"
+                required
+                class="input focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500 my-8"
+                placeholder="Email.. "
+              />
+              <p class="errorEmailVacio inputError hidden">
+                Error: email vacío
+              </p>
+            </div>
+
+            <div class="">
+              <input
+                type="password"
+                required
+                class="input focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500 mb-8"
+                placeholder="Password "
+              />
+              <p class="errorPasswordVacio inputError hidden">
+                Error: password vacío
+              </p>
+            </div>
+            <div class="flex">
+              <input type="checkbox" class="border-sky-400" value="" />
+              <div class="px-3 text-gray-500">
+                Aceptar terminos y condiciones
+              </div>
+            </div>
+            <div class="flex justify-center my-6">
+              <button
+                type="submit"
+                class="rounded-full p-3 w-full sm:w-56 bg-gradient-to-r from-sky-600 to-teal-300 text-white text-lg font-semibold"
+              >
+                Crear Cuenta
+              </button>
+            </div>
+            <div class="flex justify-center">
+              <p class="text-gray-500">Ya tienes una cuenta?</p>
+              <a href="" class="text-sky-600 pl-2"> </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
